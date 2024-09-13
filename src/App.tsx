@@ -78,11 +78,9 @@ function App() {
         }}
       />
       <div style={{ marginTop: "10px", fontSize: "18px" }}>
-        <div>
-          <strong>Prompt:</strong>
-        </div>
         <p>
-          {thinking && <img src={spinner} />}
+          <strong>Prompt:&nbsp;&nbsp;</strong>
+          {thinking && <img style={{ paddingLeft: "10px" }} src={spinner} />}
           <em>{suggestions}</em>
         </p>
         <p style={{ fontSize: "15px", fontWeight: "lighter" }}>
